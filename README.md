@@ -88,14 +88,3 @@ python genomic_density.py --file annotation.gff3 --feature gene --output ~/Deskt
 - *Drosophila melanogaster* BDGP6.54 (Ensembl release 115)
 - Compatible with any GFF3 file following the standard specification
 
----
-
-## Background
-
-Visualizing where genomic features cluster along chromosomes is a foundational analysis in comparative genomics, transposable element research, and genome annotation pipelines. This tool provides a lightweight, configurable way to generate such visualizations from any standard GFF3 file, applicable across species from insects to humans.
-
----
-
-## License
-
-MIT
