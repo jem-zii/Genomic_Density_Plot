@@ -4,7 +4,7 @@ A Python tool for computing and visualizing the spatial distribution of genomic 
 
 ---
 
-## What it does
+## What It Does
 
 Parses a GFF3 genome annotation file, computes feature density using a sliding window approach, and produces a multi-chromosome density plot — one panel per chromosome, color-coded, with peak density markers.
 
@@ -70,16 +70,6 @@ python genomic_density.py --file annotation.gff3 --feature transposable_element 
 # Save output to a specific location
 python genomic_density.py --file annotation.gff3 --feature gene --output ~/Desktop/density.png
 ```
-
----
-
-## Concepts demonstrated
-
-- **GFF3 parsing** with `pandas.read_csv` and custom column naming
-- **Sliding window density computation** using NumPy and list comprehensions
-- **Multi-panel visualization** with `matplotlib` GridSpec and `seaborn` color palettes
-- **CLI tool design** with `argparse`
-- **Portable file handling** with `pathlib`
 
 ---
 
