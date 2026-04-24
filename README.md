@@ -58,7 +58,7 @@ python genomic_density.py --file FILE [--feature FEATURE] [--window WINDOW] [--o
 | `--window` | `-w` | `100000` | Sliding window size in base pairs |
 | `--output` | `-o` | auto | Output PNG path |
 
-### Examples
+#### Examples
 
 ```bash
 # Gene density with default 100 kbp windows
