@@ -6,7 +6,7 @@ A Python tool for computing and visualizing the spatial distribution of genomic 
 
 ## What it does
 
-Parses a GFF3 genome annotation file, computes feature density using a sliding window approach, and produces a publication-ready multi-chromosome density plot — one panel per chromosome, color-coded, with peak density markers.
+Parses a GFF3 genome annotation file, computes feature density using a sliding window approach, and produces a multi-chromosome density plot — one panel per chromosome, color-coded, with peak density markers.
 
 <img width="477" height="914" alt="image" src="https://github.com/user-attachments/assets/75b0088a-d97e-4e31-af2f-daf4f85f4fb3" />
 
