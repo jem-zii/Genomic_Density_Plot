@@ -4,10 +4,10 @@ genomic_density.py
 A tool for computing and visualizing genomic feature density
 across chromosomes from a GFF3 annotation file.
 
-Stage 1: Load and parse a GFF3 file into a pandas dataframe
-Stage 2: Compute sliding window feature density per chromosome
-Stage 3: Visualize as a multi-chromosome density plot
-Stage 4: CLI interface via argparse
+1. Load and parse a GFF3 file into a pandas dataframe
+2. Compute sliding window feature density per chromosome
+3. Visualize as a multi-chromosome density plot
+4. CLI interface via argparse
 
 Libraries used: numpy, pandas, matplotlib, seaborn, argparse
 """
@@ -22,7 +22,7 @@ import seaborn as sns
 from pathlib import Path
 
 
-# STAGE 1:  Load and parse the GFF3 file
+# 1. Load and parse the GFF3 file
 
 gff_cols = [
     'seqname', 'source', 'feature', 'start', 'end', 'score',
@@ -58,7 +58,7 @@ def load_gff(filepath, feature_type='gene'):
     return df.reset_index(drop=True)
 
 
-# STAGE 2:  Compute sliding window density
+# 2. Compute sliding window density
 
 def compute_density(df, chrom, window_size=100_000):
     
@@ -99,7 +99,7 @@ def compute_all_density(df, window_size=100_000):
     ]).reset_index(drop=True)
 
 
-# STAGE 3:  Visualize
+# 3. Visualize
 
 def plot_density(density_df, feature_type, window_size, output_path):
     
@@ -147,7 +147,7 @@ def plot_density(density_df, feature_type, window_size, output_path):
     plt.show()
 
 
-# STAGE 4: CLI interface via argparce
+# 4. CLI interface via argparce
 
 def parse_args():
 
