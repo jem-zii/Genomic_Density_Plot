@@ -73,7 +73,7 @@ python genomic_density.py --file annotation.gff3 --feature gene --output ~/Deskt
 
 ---
 
-## Tested on
+## Tested On
 
 - *Drosophila melanogaster* BDGP6.54 (Ensembl release 115)
 - Compatible with any GFF3 file following the standard specification
